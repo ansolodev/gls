@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Governance Portal | Greatland School</title>
+    
+    <!-- Clean, Fail-Safe Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#044e33',
+                            950: '#022c1d',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-800 selection:text-white">
+
+    <!-- Top Banner Notification (Emerald Green Background) -->
+    <div class="bg-emerald-950 text-slate-300 text-xs text-center py-2 px-4 border-b border-gold-500 tracking-wider font-medium">
+        🔒 OFFICIAL DATA PROTECTION WORKFLOW &mdash; COMPLIANT WITH THE PH DATA PRIVACY ACT OF 2012
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="lg:grid lg:grid-cols-4 lg:gap-10">
+            
+            <!-- Left Sidebar Navigation -->
+            <aside class="hidden lg:block lg:col-span-1">
+                <div class="sticky top-6 space-y-4 border-r border-slate-200 pr-6">
+                    <!-- School Logo Container -->
+                    <div class="pb-2">
+                        <img src="https://raw.githubusercontent.com/ansolodev/gls/cd7974bab9655961e96ca39ab51cfc35ee2e8401/GLS%20LOGO.png" 
+                             alt="Greatland School Logo" 
+                             class="h-24 w-auto object-contain mb-4">
+                        <span class="text-xs font-bold text-emerald-800 tracking-widest uppercase">Classification</span>
+                        <h2 class="text-lg font-bold text-slate-900 mt-1">GSSPL-EDG-2026</h2>
+                    </div>
+                    <nav class="space-y-2">
+                        <a href="#purpose" class="block text-sm font-medium text-emerald-800 hover:text-gold-600 transition">1.0 Purpose & Scope</a>
+                        <a href="#classification" class="block text-sm font-medium text-slate-600 hover:text-slate-900 transition">2.0 Data Classification</a>
+                        <a href="#lifecycle" class="block text-sm font-medium text-slate-600 hover:text-slate-900 transition">3.0 Data Lifecycle</a>
+                        <a href="#security" class="block text-sm font-medium text-slate-600 hover:text-slate-900 transition">4.0 Security Protocols</a>
+                        <a href="#rights" class="block text-sm font-medium text-slate-600 hover:text-slate-900 transition">5.0 Data Subject Rights</a>
+                    </nav>
+                    <div class="pt-6 border-t border-slate-200 text-xs text-slate-500 space-y-1">
+                        <p><strong>Effective:</strong> June 1, 2026</p>
+                        <p><strong>Version:</strong> 1.0 (Active)</p>
+                        <p><strong>DPO Office:</strong> Greatland IT Operations</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Policy Content Area -->
+            <main class="lg:col-span-3 space-y-12 bg-white p-6 sm:p-10 rounded-xl shadow-sm border border-slate-200">
+                
+                <!-- Institutional Header -->
+                <header class="border-b border-slate-200 pb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div>
+                        <p class="text-xs font-bold tracking-widest text-emerald-800 uppercase">Institutional Framework</p>
+                        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 mt-1">Executive Policy: Student Data Governance & Fair Processing Guidelines</h1>
+                        <p class="text-slate-500 mt-2 text-sm">Official publication governing manual and digital processing templates for enrollment administrative staff[cite: 1].</p>
+                    </div>
+                    <!-- Visible Logo on Mobile -->
+                    <div class="lg:hidden shrink-0">
+                        <img src="https://raw.githubusercontent.com/ansolodev/gls/cd7974bab9655961e96ca39ab51cfc35ee2e8401/GLS%20LOGO.png" 
+                             alt="Greatland School Logo" 
+                             class="h-20 w-auto object-contain mx-auto">
+                    </div>
+                </header>
+
+                <!-- Section 1.0 -->
+                <section id="purpose" class="scroll-mt-6">
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="text-emerald-800 font-mono text-base">1.0</span> Purpose & Scope
+                    </h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+                        This framework establishes the institutional standards for the collection, storage, processing, and lifecycle management of student records at Greatland School[cite: 1]. Modeled after global academic data governance best practices, this policy ensures absolute alignment with the Philippine Data Privacy Act (DPA) of 2012 through the enforcement of three core pillars: <strong class="text-emerald-950 font-semibold">Transparency, Legitimate Purpose, and Proportionality</strong>[cite: 1].
+                    </p>
+                    <p class="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+                        This policy applies universally to all academic registrars, administrative staff, IT operations personnel, and third-party contractors handling student information.
+                    </p>
+                </section>
+
+                <!-- Section 2.0 -->
+                <section id="classification" class="scroll-mt-6">
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="text-emerald-800 font-mono text-base">2.0</span> Data Classification Matrix
+                    </h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base mb-4">
+                        To ensure appropriate technical and physical safeguards, Greatland School categorizes collected enrollment data into distinct risk tiers based on vulnerability profile[cite: 1]:
+                    </p>
+                    
+                    <div class="overflow-x-auto border border-slate-200 rounded-lg">
+                        <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+                            <thead class="bg-emerald-950 text-xs font-bold text-slate-300 uppercase tracking-wider">
+                                <tr>
+                                    <th class="px-4 py-3 border-b border-gold-500">Classification Tier</th>
+                                    <th class="px-4 py-3 border-b border-gold-500">Collected Elements</th>
+                                    <th class="px-4 py-3 border-b border-gold-500">Risk Level</th>
+                                    <th class="px-4 py-3 border-b border-gold-500">Access Control Rule</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-white text-slate-600">
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold text-slate-900">Tier 1: Public Directory</td>
+                                    <td class="px-4 py-3">Student Name, Grade Level[cite: 1]</td>
+                                    <td class="px-4 py-3"><span class="px-2 py-1 text-xs font-medium bg-emerald-50 text-emerald-850 rounded border border-emerald-200">Low</span></td>
+                                    <td class="px-4 py-3">General Academic Admin</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold text-slate-900">Tier 2: Restricted Personal</td>
+                                    <td class="px-4 py-3">Home Address, Contact Numbers, Email Addresses[cite: 1]</td>
+                                    <td class="px-4 py-3"><span class="px-2 py-1 text-xs font-medium bg-amber-50 text-gold-600 rounded border border-gold-200">Medium</span></td>
+                                    <td class="px-4 py-3">Enrollment Office / Advisory Staff Only[cite: 1]</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold text-slate-900">Tier 3: High-Risk Sensitive (SPI)</td>
+                                    <td class="px-4 py-3">LRN, PSA Birth Cert #, Medical/SPED Needs, 4Ps Status[cite: 1]</td>
+                                    <td class="px-4 py-3"><span class="px-2 py-1 text-xs font-semibold bg-rose-50 text-rose-700 rounded border border-rose-200">Critical</span></td>
+                                    <td class="px-4 py-3 font-medium text-rose-700">Role-Based Access Control (RBAC) + Encryption[cite: 1]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Section 3.0 -->
+                <section id="lifecycle" class="scroll-mt-6">
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="text-emerald-800 font-mono text-base">3.0</span> The Data Lifecycle & Retention Mandate
+                    </h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+                        In alignment with world-class data minimization standards, Greatland School explicitly rejects indefinite data hoarding. Data is retained only for its specified institutional lifecycle[cite: 1]:
+                    </p>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6 text-center text-xs font-semibold tracking-wide uppercase">
+                        <div class="bg-emerald-50 text-emerald-950 p-3 rounded-lg border border-emerald-200">
+                            <span class="block text-gold-600 text-base font-bold">01</span> Intake / Collection[cite: 1]
+                        </div>
+                        <div class="bg-emerald-50 text-emerald-950 p-3 rounded-lg border border-emerald-200">
+                            <span class="block text-gold-600 text-base font-bold">02</span> Active Tracker[cite: 1]
+                        </div>
+                        <div class="bg-emerald-50 text-emerald-950 p-3 rounded-lg border border-emerald-200">
+                            <span class="block text-gold-600 text-base font-bold">03</span> Regulatory Archival[cite: 1]
+                        </div>
+                        <div class="bg-rose-50 text-rose-950 p-3 rounded-lg border border-rose-200">
+                            <span class="block text-rose-600 text-base font-bold">04</span> Secure Purge[cite: 1]
+                        </div>
+                    </div>
+
+                    <ul class="list-disc pl-5 mt-3 space-y-2 text-slate-600 text-sm sm:text-base">
+                        <li><strong class="text-slate-800">Active Phase:</strong> Data remains active for the full duration of the student's enrollment[cite: 1].</li>
+                        <li><strong class="text-slate-800">Archival Phase:</strong> Core academic sheets (Form 137/SF10) are permanently archived per Department of Education regulations[cite: 1]. Secondary sensitive files (such as 4Ps qualification sheets) are transitioned into physical cold storage offline[cite: 1].</li>
+                        <li><strong class="text-slate-800">Destruction Phase:</strong> Obsolete paper entries containing sensitive information are permanently destroyed using <strong class="text-slate-900">Level P-4 cross-cut paper shredders</strong>[cite: 1]. Systemic backups are digitally purged using cryptographically secure wiping algorithms[cite: 1].</li>
+                    </ul>
+                </section>
+
+                <!-- Section 4.0 -->
+                <section id="security" class="scroll-mt-6">
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="text-emerald-800 font-mono text-base">4.0</span> Physical & Administrative Security Protocols
+                    </h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+                        To mitigate the risks associated with manual, paper-based enrollment workflows, the following operational mandates are strictly enforced across the campus registrar[cite: 1]:
+                    </p>
+                    <blockquote class="mt-4 border-l-4 border-emerald-800 bg-emerald-50/40 p-4 rounded-r-lg space-y-3 text-sm text-slate-700">
+                        <p><strong>🔒 The Zero-Exposure Rule:</strong> No completed enrollment forms may be left face-up or unattended on public-facing intake tables[cite: 1]. Forms must immediately be turned face down or fed into secure dropboxes upon counter receipt[cite: 1].</p>
+                        <p><strong>🔒 Access Separation:</strong> Hard-copy forms must be moved directly into dual-lock security cabinets accessible exclusively by authorized registry personnel[cite: 1].</p>
+                        <p><strong>🔒 Screen Privacy Obfuscation:</strong> Terminal screens running database software or updating the DepEd Learner Information System (LIS) must be equipped with physical polarizing micro-louvers (privacy filters) and must face entirely away from the student queuing line[cite: 1].</p>
+                    </blockquote>
+                </section>
+
+                <!-- Section 5.0 -->
+                <section id="rights" class="scroll-mt-6">
+                    <h3 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+                        <span class="text-emerald-800 font-mono text-base">5.0</span> Data Subject Rights Enforcement
+                    </h3>
+                    <p class="mt-3 text-slate-600 leading-relaxed text-sm sm:text-base">
+                        Greatland School guarantees parents, legal guardians, and authorized learners the full execution of their rights as defined by global privacy frameworks and the National Privacy Commission (NPC)[cite: 1]:
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-4 mt-4 text-sm">
+                        <div class="border border-slate-200 p-4 rounded-lg bg-white shadow-sm">
+                            <h4 class="font-bold text-emerald-850 mb-1">Right of Access</h4>
+                            <p class="text-slate-600">Request a secure, validated copy of all digital entries and historical paper metadata stored for your account[cite: 1].</p>
+                        </div>
+                        <div class="border border-slate-200 p-4 rounded-lg bg-white shadow-sm">
+                            <h4 class="font-bold text-emerald-850 mb-1">Right to Rectification</h4>
+                            <p class="text-slate-600">Inaccurate or incomplete contact information will be corrected across all active databases within 48 business hours of written notice[cite: 1].</p>
+                        </div>
+                        <div class="border border-slate-200 p-4 rounded-lg bg-white shadow-sm">
+                            <h4 class="font-bold text-emerald-850 mb-1">Right to Object</h4>
+                            <p class="text-slate-600">Revoke consent for optional institutional workflows (such as yearbook features or school marketing activities) at any point without impacting academic standing[cite: 1].</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Sticky Bottom Footer -->
+        <footer class="mt-16 pt-6 border-t border-slate-200 text-center text-xs text-slate-400">
+            &copy; 2026 <span class="text-emerald-850 font-medium">Greatland School of San Pedro Laguna</span>. All Institutional Rights Reserved[cite: 1]. Developed for IT Audit & Data Governance Alignment Controls.
+        </footer>
+    </div>
+</body>
+</html>
